@@ -56,3 +56,8 @@ Beels says:
 Chris Beeler [2:00 PM]
 I just did `nano ~/.git-credentials` and took my password out and put my PAT in, no problems yet
 ```
+
+## Eclipse
+
+Paul says:
+![Secure Storage dialog](https://github.com/mssonger/potential-bassoon/blob/master/images/eclipseSecureStorage.png "Secure Storage dialog")
