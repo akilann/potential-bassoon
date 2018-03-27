@@ -60,4 +60,7 @@ I just did `nano ~/.git-credentials` and took my password out and put my PAT in,
 ## Eclipse
 
 Paul says:
+
 ![Secure Storage dialog](https://github.com/mssonger/potential-bassoon/blob/master/images/eclipseSecureStorage.png "Secure Storage dialog")
+
+Delete secure storage entries for GitHub, then re-enter when you pull, clone, etc.
