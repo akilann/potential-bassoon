@@ -22,6 +22,8 @@ These notes are my best memory of how I got it to work (on March 27, 2018). Your
 1. nav to a terminal window and attempt to access github.com via command line (clone, pull, etc)
 1. pay extra attention to the spew of a crazy error message
 1. inside there somewhere is a big long URL link, copy it
+    - The link looks like this https://github.com/orgs/geappliances/sso?authorization_request=
+    - Alternatively, if you have more than one token, you can go into Developer Settings -> Personal Access Tokens section in your github.com profile and select the grayed-out `SSO` button to authorize the token.
 1. in a new browser tab, in the same window as above, paste the link from above error message and nav there
 1. follow those instructions, click click click, SSO stuff
 1. go back to your terminal window and try again
