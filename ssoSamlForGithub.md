@@ -33,23 +33,24 @@ These notes are my best memory of how I got it to work (on March 27, 2018). Your
 ## WIN
 
 1. Use the same token as above (if you don't have one, see the top steps above)
-1. make sure your git for windows and git bash are updated and modern versions and such
-1. open a `git bash` terminal window
-1. type `cd ~` to nav to your "home" directory
-1. manually update or create a file called `.git-credentials` somehow or other in that same directory (your "home" directory)
-    - mine looks like `/c/Users/220038648` in bash and `C:\Users\220038648` in windows command prompt (in case you need that info to create the file)
-1. the content should be `https://<your github username>:<your access token>@github.com`
-    - mine looks like: `https://mssonger:abadcafe1234567890bingo42notreally@github.com`
-1. in the same `git bash` window, type `git config --global credential.helper 'store'`
-    - note the single quotes around 'store'
-1. now try some sort of github.com command line access (clone, pull, etc)
-1. hopefully you will get a prompt for user name
-1. type in your GitHub.com user name (NOT your SSO)
-1. Next you need to type in your token that you just created (way above)
-    - in my case, I had to search and search behind all sorts of other windows for a tiny pop up dialog box. Once you find that, paste in your token and continue
-1. go back to your terminal window and try again
-1. in my case, it worked at that point
-1. GOOD LUCK
+1. NOTE NOTE: This list of steps is what happened to work for me. It has NOT worked for everyone. An alternative is below in the WIN ALTERNATIVE section. It seems easiest to try that one first, and only return here if it doesn't work
+    1. make sure your git for windows and git bash are updated and modern versions and such
+    1. open a `git bash` terminal window
+    1. type `cd ~` to nav to your "home" directory
+    1. manually update or create a file called `.git-credentials` somehow or other in that same directory (your "home" directory)
+        - mine looks like `/c/Users/220038648` in bash and `C:\Users\220038648` in windows command prompt (in case you need that info to create the file)
+    1. the content should be `https://<your github username>:<your access token>@github.com`
+        - mine looks like: `https://mssonger:abadcafe1234567890bingo42notreally@github.com`
+    1. in the same `git bash` window, type `git config --global credential.helper 'store'`
+        - note the single quotes around 'store'
+    1. now try some sort of github.com command line access (clone, pull, etc)
+    1. hopefully you will get a prompt for user name
+    1. type in your GitHub.com user name (NOT your SSO)
+    1. Next you need to type in your token that you just created (way above)
+        - in my case, I had to search and search behind all sorts of other windows for a tiny pop up dialog box. Once you find that, paste in your token and continue
+    1. go back to your terminal window and try again
+    1. in my case, it worked at that point
+    1. GOOD LUCK
 
 ## Linux
 
@@ -66,3 +67,15 @@ Paul says:
 ![Secure Storage dialog](https://github.com/mssonger/potential-bassoon/blob/master/images/eclipseSecureStorage.png "Secure Storage dialog")
 
 Delete secure storage entries for GitHub, then re-enter when you pull, clone, etc.
+
+## WIN ALTERNATIVE
+
+Abhi says:
+
+1. Use the same token as way above (if you don't have one, see the very top steps above)
+1. In the windows control panel application, click
+    1. User Accounts
+    1. Manage windows Credentials (under the "Credentials Manager" section)
+1. Find the entry for `git:https://github.com`, expand it, click edit
+1. Erase the field for "Password" and replace it with your token
+1. Save, close the application, etc
