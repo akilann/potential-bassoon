@@ -79,3 +79,11 @@ Abhi says:
 1. Find the entry for `git:https://github.com`, expand it, click edit
 1. Erase the field for "Password" and replace it with your token
 1. Save, close the application, etc
+
+## Source Tree
+Help from #swqateam:
+
+- https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/
+- https://geappliances.atlassian.net/wiki/spaces/SWQATOOLS/pages/189662013/GIT+Installation
+- "As long as the token is setup and you have the credential file setup, you just sign in to sourcetree like usual; no real changes"
+- "You sign in with your github account and password, not your token and sso one"
