@@ -54,11 +54,11 @@ These notes are my best memory of how I got it to work (on March 27, 2018). Your
 
 ## Linux
 
-Beels says:
-```
-Chris Beeler [2:00 PM]
-I just did `nano ~/.git-credentials` and took my password out and put my PAT in, no problems yet
-```
+1. Run `git config --global credential.helper cache`
+1. Run `git clone` or `git pull` or any `git` command that asks for a username and password
+1. Enter your username and Personal Access Token for your password
+
+Your credentials should now be saved in your OS keyring.
 
 ## Eclipse
 
